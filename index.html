@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A friendly guide to exploring popular AI assistants and tools.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Artificial Intelligence(AI)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top" aria-label="Main navigation">
+        <div class="container py-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto align-items-sm-center gap-sm-3">
+                    <li class="nav-item"><a class="nav-link" href="#tools">AI tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#responsible-ai">Using AI thoughtfully</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="container hero" aria-labelledby="page-title">
+            <p class="eyebrow mb-3">A friendly guide to artificial intelligence</p>
+            <h1 class="hero-title mb-4" id="page-title">Find the AI tool for <em>your next idea.</em></h1>
+            <p class="hero-copy mb-0">Explore popular AI assistants, see what each can help with, and choose a tool that
+                fits
+                the way you work and learn.</p>
+        </section>
+
+        <section class="container pb-5" id="tools" aria-labelledby="tools-title">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 mb-4">
+                <div>
+                    <p class="eyebrow mb-2">Explore the landscape</p>
+                    <h2 class="mb-0" id="tools-title">A few tools to get you started</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark"
+                            src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/openai.svg"
+                            alt="OpenAI logo" loading="lazy" decoding="async">
+                        <span class="tool-category">Conversation &amp; writing</span>
+                        <h3>ChatGPT</h3>
+                        <p>An AI assistant from OpenAI for conversation, writing, brainstorming, and exploring ideas.
+                        </p>
+                        <p class="tool-best-for"><strong>Best for:</strong> brainstorming and drafting</p>
+                        <a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit ChatGPT (opens in a new tab)">Visit ChatGPT <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/claude.svg"
+                            alt="Anthropic logo" loading="lazy" decoding="async">
+                        <span class="tool-category">Writing &amp; analysis</span>
+                        <h3>Claude</h3>
+                        <p>An AI assistant from Anthropic that can help with writing, analysis, learning, and
+                            problem-solving.</p>
+                        <p class="tool-best-for"><strong>Best for:</strong> writing and detailed analysis</p>
+                        <a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Claude (opens in a new tab)">Visit Claude <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark"
+                            src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/gemini-color.svg"
+                            alt="Google Gemini logo" loading="lazy" decoding="async">
+                        <span class="tool-category">Everyday assistant</span>
+                        <h3>Gemini</h3>
+                        <p>Google's AI assistant for asking questions, generating ideas, and working through everyday
+                            tasks.</p>
+                        <p class="tool-best-for"><strong>Best for:</strong> everyday questions and tasks</p>
+                        <a class="tool-link" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Gemini (opens in a new tab)">Visit Gemini <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark"
+                            src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/microsoft-copilot.svg"
+                            alt="Microsoft Copilot logo" loading="lazy" decoding="async">
+                        <span class="tool-category">Productivity</span>
+                        <h3>Microsoft Copilot</h3>
+                        <p>A Microsoft AI assistant for asking questions, creating content, and getting help with tasks.
+                        </p>
+                        <p class="tool-best-for"><strong>Best for:</strong> productivity and content creation</p>
+                        <a class="tool-link" href="https://copilot.microsoft.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit Microsoft Copilot (opens in a new tab)">Visit
+                            Copilot <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark"
+                            src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/perplexity.svg"
+                            alt="Perplexity logo" loading="lazy" decoding="async">
+                        <span class="tool-category">Research</span>
+                        <h3>Perplexity</h3>
+                        <p>An AI-powered answer and research tool designed to help explore questions and find sources.
+                        </p>
+                        <p class="tool-best-for"><strong>Best for:</strong> research with linked sources</p>
+                        <a class="tool-link" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Perplexity (opens in a new tab)">Visit Perplexity <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="tool-card">
+                        <img class="tool-mark"
+                            src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/metaai-color.svg"
+                            alt="Meta logo" loading="lazy" decoding="async">
+                        <span class="tool-category">More to explore</span>
+                        <h3>Other AI tools</h3>
+                        <p>Discover more assistants and models, such as Meta AI, Mistral Le Chat, and DeepSeek.</p>
+                        <p class="tool-best-for"><strong>Best for:</strong> exploring other assistants</p>
+                        <a class="tool-link" href="https://www.meta.ai/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Meta AI (opens in a new tab)">Explore Meta AI <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container py-5" id="ai-pros-cons" aria-labelledby="ai-pros-cons-title">
+            <div class="mb-4">
+                <h2 class="mb-0" id="ai-pros-cons-title">Pros and cons of using AI</h2>
+            </div>
+            <div class="row g-4">
+                <article class="col-12 col-md-6">
+                    <div class="ai-pros-cons-card h-100">
+                        <h3>Potential benefits</h3>
+                        <ul class="mb-0">
+                            <li>Helps brainstorm, summarize, and get started on tasks.</li>
+                            <li>Can explain concepts and support learning at your own pace.</li>
+                            <li>Can save time on routine tasks and help organize ideas.</li>
+                            <li>Offers language and accessibility support for different needs.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="ai-pros-cons-card h-100">
+                        <h3>Potential drawbacks</h3>
+                        <ul class="mb-0">
+                            <li>May produce inaccurate, outdated, or biased information.</li>
+                            <li>Sharing sensitive details may create privacy risks.</li>
+                            <li>Over-reliance can limit independent thinking and skill-building.</li>
+                            <li>AI output may not follow school, workplace, or copyright rules.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <p class="small text-secondary mt-3 mb-0">Benefits and risks depend on the tool and how you use it.</p>
+            <p class="risk-warning mt-3 mb-0 d-flex align-items-center justify-content-center text-center" role="note">
+                <strong>Use AI at your own risk.</strong>
+            </p>
+        </section>
+
+        <section class="note-panel py-5" id="responsible-ai" aria-labelledby="responsible-title">
+            <div class="container py-lg-3">
+                <p class="eyebrow mb-2" style="color: #c7b7ff">A thoughtful starting point</p>
+                <h2 class="mb-3" id="responsible-title">Use AI as a tool, not the final word.</h2>
+                <p class="mb-0">AI tools can make mistakes or provide incomplete information. Check important claims
+                    with
+                    reliable sources, protect personal information, and follow the rules that apply to your work or
+                    studies.
+                    Features and availability can vary by provider.</p>
+            </div>
+        </section>
+
+        <section class="container py-5 text-center" id="developer" aria-labelledby="developer-title">
+            <h2 class="mb-4" id="developer-title">Developer</h2>
+            <a href="https://github.com/justine06" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Justine Cortez's GitHub profile (opens in a new tab)">
+                <img class="developer-photo rounded-circle mb-3" width="160" height="160"
+                    src="https://scontent.fmnl4-8.fna.fbcdn.net/v/t39.30808-6/857609520_30044233131843026_8235847015895275228_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1366&amp;ctp=s2048x1366&amp;_nc_cat=105&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_eui2=AeFIQNtAUeHppxrG1WZdFOyRQvzVvE2kP7xC_NW8TaQ_vFhTEdC8uNFBy_VIm9QaqI_c6C5pUlysWY2-1eca2lZ3&amp;_nc_ohc=FsOTUnp31c0Q7kNvwEBVplC&amp;_nc_oc=Adrsp1UnNDnLWk3rhIKs99JBpEWlYFQN3YBmJYWgP1GSkIbkhiqHXdJfpxMroFiL8zE&amp;_nc_zt=23&amp;_nc_ht=scontent.fmnl4-8.fna&amp;_nc_gid=vCnvx0frQmpJ9A9haWccMA&amp;_nc_ss=7b2a8&amp;oh=00_AQO5zprm9DLJBgstz5OpPExYMrwN0JLO8WuTLOzJ3NFE6w&amp;oe=6AE26A5E"
+                    alt="Photo of Justine Cortez" loading="lazy" decoding="async" style="object-fit: cover;">
+            </a>
+            <p class="mb-1">Justine Cortez</p>
+        </section>
+
+        <section class="container py-5" id="contact" aria-labelledby="contact-title">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <p class="eyebrow mb-2">Get in touch</p>
+                    <h2 class="mb-3" id="contact-title">Contact us</h2>
+                    <form class="contact-form" id="contact-form" action="mailto:2503754@ub.edu.ph" method="post"
+                        enctype="text/plain">
+                        <div class="mb-3">
+                            <label class="form-label" for="contact-name">Name</label>
+                            <input class="form-control" type="text" id="contact-name" name="name" autocomplete="name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="contact-email">Email address</label>
+                            <input class="form-control" type="email" id="contact-email" name="email"
+                                autocomplete="email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label" for="contact-message">Message</label>
+                            <textarea class="form-control" id="contact-message" name="message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const contactSubmit = contactForm.querySelector('button[type="submit"]');
+
+        contactForm.addEventListener('click', function (event) {
+            if (event.target === contactSubmit && !contactForm.checkValidity()) {
+                contactSubmit.classList.replace('btn-primary', 'btn-danger');
+            }
+        });
+
+        contactForm.addEventListener('input', function () {
+            if (contactForm.checkValidity()) {
+                contactSubmit.classList.replace('btn-danger', 'btn-primary');
+            }
+        });
+
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+
+            const subject = encodeURIComponent(`Website inquiry from ${name || 'visitor'}`);
+            const body = encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+            );
+
+            window.location.href = `mailto:2503754@ub.edu.ph?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+
+</html>

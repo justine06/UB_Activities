@@ -1,0 +1,226 @@
+:root {
+  --ink: #211a32;
+  --paper: #f7f5fa;
+  --muted: #6d6877;
+  --line: #e1dce9;
+  --violet: #7253d6;
+  --lavender: #e8e0ff;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-link {
+  color: var(--ink);
+  font-size: .9rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--violet);
+}
+
+.hero {
+  padding-block: clamp(4rem, 10vw, 8rem);
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+  background:
+    radial-gradient(ellipse at 85% 18%, rgb(114 83 214 / 14%), transparent 38%),
+    radial-gradient(ellipse at 12% 82%, rgb(232 224 255 / 75%), transparent 42%);
+  border-radius: 24px;
+}
+
+.eyebrow {
+  color: var(--violet);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  max-width: 850px;
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  font-weight: 600;
+  line-height: .98;
+}
+
+.hero-title em {
+  color: var(--violet);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.hero-copy {
+  max-width: 580px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.tool-card {
+  height: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgb(33 26 50 / 8%);
+}
+
+.tool-mark {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-bottom: 1rem;
+  background: var(--lavender);
+  border-radius: 8px;
+  object-fit: contain;
+  padding: .5rem;
+}
+
+.tool-mark[alt="OpenAI logo"],
+.tool-mark[alt="Microsoft Copilot logo"] {
+  mix-blend-mode: multiply;
+}
+
+.tool-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tool-category {
+  display: inline-block;
+  margin-bottom: .65rem;
+  padding: .3rem .65rem;
+  color: var(--violet);
+  background: var(--lavender);
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.developer-photo {
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 5px rgb(114 83 214 / 16%), 0 0 24px rgb(114 83 214 / 45%);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#developer a:hover .developer-photo {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 6px rgb(114 83 214 / 24%), 0 0 34px rgb(114 83 214 / 70%);
+}
+
+.tool-card p:not(.tool-best-for) {
+  min-height: 4.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.tool-card .tool-best-for {
+  min-height: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.tool-link {
+  color: var(--violet);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tool-link:hover,
+.tool-link:focus {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.ai-pros-cons-card {
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.ai-pros-cons-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ai-pros-cons-card ul {
+  padding-left: 1.25rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.ai-pros-cons-card li + li {
+  margin-top: .5rem;
+}
+
+.risk-warning {
+  padding: .5rem .75rem;
+  color: #664d03;
+  background: #fff3cd;
+  border: 1px solid #ffecb5;
+  border-left: 5px solid #e0a800;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+.note-panel {
+  background: var(--ink);
+  color: #fff;
+}
+
+.note-panel p {
+  max-width: 720px;
+  color: #ded8e9;
+  line-height: 1.7;
+}
+
+.contact-form {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+}
+
+.contact-form .form-control {
+  border-color: var(--line);
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 .2rem rgb(114 83 214 / 18%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+  }
+}
